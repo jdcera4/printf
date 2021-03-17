@@ -1,2 +1,2 @@
 # Printf
-   -Function that prints text and data type specifiers
+   Function that prints text and data type specifiers
