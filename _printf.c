@@ -10,9 +10,10 @@
  */
 int _printf(const char *format, ...)
 {
-		int i;
-		for (i = 0; format[i] != '\0'; i++)
-		;
-		write(1, format, i);
-		return (0);
+	int i;
+
+	for (i = 0; format[i] != '\0'; i++)
+	;
+	write(1, format, i);
+	return (0);
 }
