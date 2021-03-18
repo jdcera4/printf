@@ -5,12 +5,15 @@
  * @li: lis of parameters
  *
  */
-void func_c(va_list li)
+int func_c(va_list li)
 {
 	char *a;
-	int i = 0;
+	int i = 0, count = 0;
 
 	a = va_arg(li, char*);
 
 	write(1, &a[i], 1);
+	count++;
+
+	return (count);
 }

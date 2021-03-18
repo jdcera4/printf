@@ -9,7 +9,8 @@
  */
 int main(void)
 {
-	_printf("hola %s %c %i gei\n", "care nepe", "y", 23);
-
+	int o;
+	o = _printf("hola%c %s", "h", "solo");
+	printf("\n%d\n", o);
 	return (0);
 }

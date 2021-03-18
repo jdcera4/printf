@@ -20,7 +20,7 @@
 	$ _printf ("hello worl%c", 'd');
 
 
-
+![Alt text](diagrama.png?raw=true)
 ## Options
 
 	* % start a format specification

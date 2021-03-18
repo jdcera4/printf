@@ -5,7 +5,7 @@
  * @li: lis of parameters
  *
  */
-void func_i(va_list li)
+int func_por(va_list li)
 {
 	 int *p;
 	 int i;

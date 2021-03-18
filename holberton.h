@@ -5,8 +5,8 @@
 #include <stdarg.h>
 
 int _printf(const char *format, ...);
-void func_s(va_list li);
-void func_c(va_list li);
-void func_i(va_list li);
+int func_s(va_list li);
+int func_c(va_list li);
+int func_i(va_list li);
 
 #endif

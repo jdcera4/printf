@@ -8,9 +8,10 @@
  */
 int _printf(const char *format, ...)
 {
-	int i;
+	int i, count;
 	va_list li;
 
+	count = 0;
 	va_start(li, format);
 
 	for (i = 0; format[i] != '\0'; i++)
@@ -18,23 +19,24 @@ int _printf(const char *format, ...)
 		if (format[i] != '%')
 		{
 		write(1, &format[i], 1);
+		count++;
 		}
 		else
 		{
 		if (format[i + 1] == 's')
 		{
-		func_s(li);
+		count = func_s(li) + count;
 		}
 		if (format[i + 1] == 'c')
 		{
-		func_c(li);
+		count += func_c(li);
 		}
-		if (format[i + 1] == 'i')
+		if (format[i + 1] == '%')
 		{
-		func_i(li);
+		func_por(li);
 		}
 		i++;
 		}
 		}
-	return (0);
+	return (count);
 }
