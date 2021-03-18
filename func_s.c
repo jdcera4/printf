@@ -4,7 +4,7 @@
  * func_s - function print a string
  *
  * @li: lis of parameters
- *
+ * Return: count
  */
 
 

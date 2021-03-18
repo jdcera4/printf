@@ -1,15 +1,14 @@
 #include "holberton.h"
 /**
- * func_i - function print int
+ * func_por - function print int
  *
- * @li: lis of parameters
- *
+ * Return: count
  */
-int func_por(va_list li)
+int func_por(void)
 {
-	 int i = 0, count = 0;
+	int i = 0, count = 0;
 
-	 write(1, "%", 1);
-	 count++;
-	 return (count);
+	write(1, "%", 1);
+	count++;
+	return (count);
 }

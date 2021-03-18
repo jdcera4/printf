@@ -3,7 +3,7 @@
  * func_c - function print single character
  *
  * @li: lis of parameters
- *
+ * Return: count
  */
 int func_c(va_list li)
 {
