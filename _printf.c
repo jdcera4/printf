@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <unistd.h>
 #include "holberton.h"
 /**
  * _printf - My function about printf
@@ -11,9 +9,36 @@
 int _printf(const char *format, ...)
 {
 	int i;
+	va_list li;
+
+	va_start(li, format);
 
 	for (i = 0; format[i] != '\0'; i++)
-	;
-	write(1, format, i);
+		{
+			if (format[i] != 37)
+			{
+				write(1, &format[i], 1);
+			}
+			else
+			{
+				if (format[i + 1] == 's')
+				{
+					func_s(li);
+				}
+
+				if (format[i + 1] == 'c')
+				{
+					func_c(li);
+				}
+
+				if (format[i + 1] == 'i')
+				{
+					func_i(li);
+				}
+					
+				i++;
+			}	
+			
+		}
 	return (0);
 }
