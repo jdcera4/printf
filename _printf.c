@@ -15,30 +15,26 @@ int _printf(const char *format, ...)
 
 	for (i = 0; format[i] != '\0'; i++)
 		{
-			if (format[i] != 37)
-			{
-				write(1, &format[i], 1);
-			}
-			else
-			{
-				if (format[i + 1] == 's')
-				{
-					func_s(li);
-				}
-
-				if (format[i + 1] == 'c')
-				{
-					func_c(li);
-				}
-
-				if (format[i + 1] == 'i')
-				{
-					func_i(li);
-				}
-					
-				i++;
-			}	
-			
+		if (format[i] != '%')
+		{
+		write(1, &format[i], 1);
+		}
+		else
+		{
+		if (format[i + 1] == 's')
+		{
+		func_s(li);
+		}
+		if (format[i + 1] == 'c')
+		{
+		func_c(li);
+		}
+		if (format[i + 1] == 'i')
+		{
+		func_i(li);
+		}
+		i++;
+		}
 		}
 	return (0);
 }
