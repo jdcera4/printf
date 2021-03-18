@@ -18,9 +18,8 @@
 
 	$ _printf ("text %specifier");
 	$ _printf ("hello worl%c", 'd');
+	$ vagrant@vagrant-ubuntu-trusty-64:~/printf$ hello world
 
-
-![Alt text](diagrama.png?raw=true)
 ## Options
 
 	* % start a format specification
@@ -49,3 +48,6 @@
 
 	* All your files will be compiled on Ubuntu 14.04 LTS
 	* Your programs and functions will be compiled with gcc 4.8.4 using the flags -Wall -Werror -Wextra and -pedantic
+
+## flowchart
+![Alt text](diagrama.png?raw=true)

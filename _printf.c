@@ -33,7 +33,7 @@ int _printf(const char *format, ...)
 		}
 		if (format[i + 1] == '%')
 		{
-		func_por(li);
+		count += func_por(li);
 		}
 		i++;
 		}

@@ -10,7 +10,7 @@
 int main(void)
 {
 	int o;
-	o = _printf("hola%c %s", "h", "solo");
+	o = _printf("hola%c %s%%", "h", "solo");
 	printf("\n%d\n", o);
 	return (0);
 }

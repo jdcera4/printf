@@ -7,8 +7,9 @@
  */
 int func_por(va_list li)
 {
-	 int *p;
-	 int i;
+	 int i = 0, count = 0;
 
-	 p = va_arg(li, int*);
+	 write(1, "%", 1);
+	 count++;
+	 return (count);
 }
