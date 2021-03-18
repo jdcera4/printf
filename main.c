@@ -10,5 +10,6 @@
 int main(void)
 {
     _printf("hola %s %c %i gei\n", "care nepe", "y", 23);
+    
     return (0);
 }
