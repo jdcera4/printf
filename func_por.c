@@ -6,7 +6,7 @@
  */
 int func_por(void)
 {
-	int i = 0, count = 0;
+	int count = 0;
 
 	write(1, "%", 1);
 	count++;
