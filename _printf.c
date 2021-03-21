@@ -14,6 +14,10 @@ int _printf(const char *format, ...)
 	count = 0;
 	va_start(li, format);
 
+	if (format == NULL)
+	{
+		return (-1);
+	}
 	for (i = 0; format[i] != '\0'; i++)
 		{
 		if (format[i] != '%')
