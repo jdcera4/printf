@@ -39,6 +39,10 @@ int _printf(const char *format, ...)
 		{
 		count += func_por();
 		}
+		if (format[i + 1] == 'd')
+		{
+		count += func_por();
+		}
 		i++;
 		}
 		}
